@@ -8,6 +8,9 @@ name is a research ambition, **not an achieved or official Elo rating**.
 
 Version: `0.1.0-development` · Windows 11 x64 · PowerShell 7 · GPL-3.0-or-later.
 
+[Download the verified development preview](https://github.com/chatgptopenaiagi/CHESS-ELO-5000/releases/tag/v0.1.0-dev.1-chess-elo-5000) ·
+[Engineering report and acceptance results](CHESS-ELO-5000-ENGINEERING-REPORT.md).
+
 ![Actual bounded Stockfish analysis and deterministic coach](docs/screenshots/analysis.png)
 
 ## Play

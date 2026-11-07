@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source": {
+    "commit": "d273edc67897f3a7540bbe7105edce5a10b5ee15",
+    "dirty": false
+  },
+  "experiment_id": "bedf34f7d6b849d19598a503a8b412c7",
+  "tournament_id": "9d492305e0314024bcd4f3e4bf0e2da9",
+  "heldout_pre_search_receipts": 6,
+  "evidence_payload_hashes_verified": 25,
+  "frozen_model_precedes_all_heldout_labels": true,
+  "each_position_prediction_and_allocation_precedes_its_reference_label": true,
+  "every_candidate_positive_budget": true,
+  "requested_budget_per_arm": 20000,
+  "tournament_complete_games": 4,
+  "tournament_engine_processes": "independent full-skill Hash32/Hash16"
+}

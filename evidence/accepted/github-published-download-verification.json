@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "release_url": "https://github.com/chatgptopenaiagi/CHESS-ELO-5000/releases/tag/v0.1.0-dev.1-chess-elo-5000",
+  "published_at": "2026-11-07T02:56:55Z",
+  "tag": "v0.1.0-dev.1-chess-elo-5000",
+  "source_commit": "d273edc67897f3a7540bbe7105edce5a10b5ee15",
+  "is_draft": false,
+  "is_prerelease": true,
+  "remote_annotated_tag_resolves_to_source_commit": true,
+  "published_asset_count": 7,
+  "all_assets_downloaded_after_publication": true,
+  "all_downloaded_hashes_match_local_and_github": true,
+  "downloaded_sha256sums_verified": true,
+  "assets": [
+    {
+      "name": "CHESS-ELO-5000-Development.zip",
+      "bytes": 82792911,
+      "sha256": "62f38d7891f74f9ef230f41ee1f6d545cd67eba574fa04e20e3e9b962a1645a9",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    },
+    {
+      "name": "CHESS-ELO-5000-Joomla-Package.zip",
+      "bytes": 40075,
+      "sha256": "be3b5f9efa61455c1e3768f8ddf6990efe1503cff5bad94bbd5d61a2ee7f25b3",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    },
+    {
+      "name": "CHESS-ELO-5000-Python-Backend.zip",
+      "bytes": 82738498,
+      "sha256": "bab1817863197185c24a197a875f5801ecb8054bc463a248aeea9c43cc3e2fe6",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    },
+    {
+      "name": "CHESS-ELO-5000-Source.zip",
+      "bytes": 926940,
+      "sha256": "c5eb87dab5de8c74e148d76d7d6a3daa03311f645fada72ab46f6253ef376653",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    },
+    {
+      "name": "CHESS-ELO-5000-Verification.zip",
+      "bytes": 7176491,
+      "sha256": "7b390ca2e9c572252c08a057f21a9035ade3a42ffbb495bb236adf7e7f68e138",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    },
+    {
+      "name": "MANIFEST.json",
+      "bytes": 3033,
+      "sha256": "75a9cb73b39870ec06878ec150ae6b31d3ae1b97362ff91535e382fd5c274aff",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 492,
+      "sha256": "80609ef686ef80c53cc62277d55866a47ec0917cd55ed2d55e745b9d77d4df41",
+      "local_and_download_match": true,
+      "github_reported_digest_matches": true
+    }
+  ],
+  "postpublication_receipt_scope": "Created after frozen ZIPs and therefore delivered in repository/report rather than inside those same ZIPs."
+}

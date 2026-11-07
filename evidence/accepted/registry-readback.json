@@ -1,0 +1,57 @@
+{
+  "schema_version": "chesselo5000.registry-readback/1",
+  "status": "PASS",
+  "checked_utc": "2026-11-07T02:52:30.811259+00:00",
+  "source_commit": "d273edc67897f3a7540bbe7105edce5a10b5ee15",
+  "previous_record_count": 1706,
+  "record_count": 1710,
+  "all_1706_previous_ids_records_and_histories_unchanged": true,
+  "json_toml_semantic_parity": true,
+  "backup_hashes_verified": true,
+  "prior_summary_bytes_preserved": true,
+  "complete_previous_verification_snapshot_and_history_preserved": true,
+  "authoritative_apply_hashes_unchanged": true,
+  "derived_generation": "20261107T025113Z-9b04e1a6",
+  "derived_files_hashes_verified": true,
+  "derived_inventory_binding_current": true,
+  "graph_nodes_for_all_new_records": {
+    "chesselo5000-stockfish19-original": {
+      "id": "inventory:8c3aea90c0ac1ecd61e53b6c",
+      "name": "Stockfish 19 \u2014 original CHESS ELO 5000 local UCI engine",
+      "executable_path": "C:\\xampp\\CHESS-ELO-5000\\stockfish\\stockfish\\stockfish-windows-x86-64-universal.exe",
+      "selectable": false,
+      "verification_scope": "Inventory source metadata; no derived task capability claim",
+      "capabilities": []
+    },
+    "chesselo5000-encroissant-local-gui": {
+      "id": "inventory:84ffde9dbdd11013ad1ced6b",
+      "name": "En Croissant \u2014 verified Stockfish 19 Windows GUI integration",
+      "executable_path": "C:\\Users\\LOVE\\AppData\\Local\\en-croissant\\en-croissant.exe",
+      "selectable": false,
+      "verification_scope": "Inventory source metadata; no derived task capability claim",
+      "capabilities": []
+    },
+    "chesselo5000-independent-product": {
+      "id": "inventory:fd41382b7703dd133632d042",
+      "name": "CHESS ELO 5000 \u2014 independent legal chess backend and Joomla product",
+      "executable_path": "C:\\xampp\\CHESS-ELO-5000\\scripts\\Start-ChessBackend.ps1",
+      "selectable": false,
+      "verification_scope": "Inventory source metadata; no derived task capability claim",
+      "capabilities": []
+    },
+    "chesselo5000-edge-playwright-acceptance": {
+      "id": "inventory:3fe937dffbe9328a2e3dc9a5",
+      "name": "Microsoft Edge + isolated Playwright \u2014 CHESS ELO 5000 browser acceptance",
+      "executable_path": "C:\\xampp\\CHESS-ELO-5000\\.venv\\Scripts\\python.exe",
+      "selectable": false,
+      "verification_scope": "Inventory source metadata; no derived task capability claim",
+      "capabilities": []
+    }
+  },
+  "automatic_selection_status": "UNCONFIGURED_CURATED_CHESS_DOMAIN",
+  "automatic_selection_limitation": "Existing Capability-Intelligence generator maps unfamiliar inventory records to metadata-only graph nodes excluded from automatic selection. Find chess/croissant/playwright returned no candidates. The existing TRADING generator was preserved; inventory evidence and exact graph identities remain readable.",
+  "backup_directory": "C:\\Users\\LOVE\\.codex\\machine-capabilities\\backups\\chesselo5000-20261107T025102Z-32acd3bc",
+  "codex_execution_performed": false,
+  "codex_configuration_modified": false,
+  "unrelated_project_source_modified": false
+}

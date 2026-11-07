@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_worktrees": [
+    {
+      "root": "C:\\xampp\\DRAGONHYDRA",
+      "head_unchanged": true,
+      "status_unchanged": true
+    },
+    {
+      "root": "C:\\xampp\\DRAGONHYDRA-CORE-NEXT",
+      "head_unchanged": true,
+      "status_unchanged": true
+    }
+  ],
+  "all_12_dragonhydra_releases_unchanged_after_chess_publication": true,
+  "original_stockfish_unchanged": true
+}

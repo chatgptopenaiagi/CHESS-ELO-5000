@@ -1,0 +1,9 @@
+{
+  "status": "SUPERSEDES_EARLIER_WORDING",
+  "superseded_receipt": "evidence/research-prospective-verification.json",
+  "issue": "The earlier aggregate wording implied every held-out prediction preceded every held-out reference label. Processing is sequential per position; that stronger ordering was not established.",
+  "current_receipt": "evidence/research-final-prospective-verification.json",
+  "verified_semantics": "The model is frozen before every held-out reference label. Each position ranking and allocation is recorded before that same position reference label. The frozen model is not updated by held-out labels.",
+  "final_experiment": "bedf34f7d6b849d19598a503a8b412c7",
+  "final_source_commit": "d273edc67897f3a7540bbe7105edce5a10b5ee15"
+}
