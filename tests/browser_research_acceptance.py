@@ -19,7 +19,7 @@ def result_digest(value):
     return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
 
 def accepted(records,identity):
-    rows=[r for r in records if str(r.get('status','')).lower()=='completed' and r.get('result')]
+    rows=[r for r in records if str(r.get('status','')).upper()=='SUCCEEDED' and r.get('result')]
     if identity:rows=[r for r in rows if r['id']==identity]
     if not rows:raise AssertionError('Requested completed research job is unavailable to this owner')
     return rows[0]
