@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An independent local chess studio for playing, learning, analysis and reproducible search research.">
+  <title>CHESS ELO 5000 · Chess laboratory</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#play" aria-label="Chess Elo 5000 home"><span class="brand-mark">♞</span><span>CHESS ELO <strong>5000</strong><small>THE CHESS LABORATORY</small></span></a>
+      <div class="nav-label">YOUR STUDIO</div>
+      <nav id="navigation">
+        <button data-view="play" class="active"><span>♟</span>Play chess</button>
+        <button data-view="analysis"><span>⌕</span>Analysis board</button>
+        <button data-view="archive"><span>▤</span>Game archive</button>
+        <div class="nav-label">GO DEEPER</div>
+        <button data-view="learn"><span>◇</span>Learn & practice</button>
+        <button data-view="puzzles"><span>✧</span>Tactical puzzles</button>
+        <button data-view="studies"><span>⌘</span>Opening & endgames</button>
+        <div class="nav-label">RESEARCH</div>
+        <button data-view="research"><span>∿</span>Relevance lab</button>
+        <button data-view="tournaments"><span>♜</span>Tournaments</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="dot" id="system-dot"></span><div id="system-label">Connecting to your laboratory<small>LOCAL • DEVELOPMENT PREVIEW</small></div></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><button class="icon-button mobile-menu" id="menu-toggle" aria-label="Toggle navigation">☰</button><div class="breadcrumbs">CHESS LAB <span>/</span> <b id="breadcrumb">Play chess</b></div><div class="top-actions"><span class="local-badge">● LOCAL FIRST</span><button id="theme-toggle" class="icon-button" aria-label="Switch color theme">◐</button><button id="account-button" class="account-button">Sign in</button></div></header>
+      <main>
+        <section class="page-heading"><div><div class="eyebrow" id="page-eyebrow">YOUR NEXT MOVE STARTS HERE</div><h1 id="page-title">A beautiful game.<br><em>A deeper understanding.</em></h1><p id="page-description">Play with purpose. Explore every possibility. Make the next move yours.</p></div><button class="primary-button" id="new-game-button"><span>＋</span> New game</button></section>
+        <section id="board-view" class="board-layout">
+          <div class="board-column">
+            <div class="player-strip"><div class="player-avatar dark-piece">♚</div><div><strong id="top-player">Black pieces</strong><span id="top-player-detail">New game preview</span></div><time class="clock" id="top-clock">—:—</time></div>
+            <div class="board-surround"><div class="evaluation-rail" id="evaluation-rail" aria-label="No engine evaluation yet"><div id="evaluation-fill"></div></div><div class="board" id="chessboard" role="grid" aria-label="Chessboard, white at bottom"></div></div>
+            <div class="player-strip"><div class="player-avatar white-piece">♔</div><div><strong id="bottom-player">White pieces</strong><span id="bottom-player-detail">Choose a game to begin</span></div><time class="clock" id="bottom-clock">—:—</time></div>
+            <div class="board-toolbar"><div><button class="icon-button" id="rotate-board" title="Rotate board" aria-label="Rotate board">⇅</button><button class="icon-button" id="copy-fen" title="Copy displayed FEN" aria-label="Copy displayed FEN">▣</button><button class="icon-button" id="undo-move" title="Undo in study mode" aria-label="Undo in study mode">↶</button><button class="icon-button" id="restart-game" title="Restart as a new saved game" aria-label="Restart as a new saved game">↺</button></div><div class="replay-controls"><button class="icon-button" data-replay="first" aria-label="Replay first position">|‹</button><button class="icon-button" data-replay="previous" aria-label="Replay previous move">‹</button><span id="replay-label">LIVE BOARD</span><button class="icon-button" data-replay="next" aria-label="Replay next move">›</button><button class="icon-button" data-replay="last" aria-label="Return to current position">›|</button></div></div>
+            <div class="board-caption"><span class="dot amber"></span><span id="board-status">Start a new game or open a position from your archive.</span></div>
+          </div>
+          <div class="insight-column">
+            <div class="card game-card"><div class="card-heading"><h2 id="game-card-title">The game is yours.</h2><span class="pill" id="game-mode-label">READY WHEN YOU ARE</span></div><p id="game-summary" class="muted">A local engine. Authoritative chess rules. Every accepted move saved.</p><div class="game-state-row"><div><small>TO MOVE</small><strong id="side-to-move">White</strong></div><div><small>GAME RESULT</small><strong id="game-result">—</strong></div><div><small>MOVE</small><strong id="move-count">01</strong></div></div><div class="captured-row"><span>Captured</span><div id="captured-pieces">—</div></div><div class="move-list" id="move-history" aria-label="Game move history"><div class="empty-state"><span>♙</span><p>Every great game begins<br>with a single move.</p></div></div><div class="game-actions"><button id="engine-reply" class="secondary-button">Engine reply</button><button id="resign-game" class="text-button">Resign</button><button id="draw-game" class="text-button">Draw</button></div></div>
+            <div class="card analysis-card"><div class="card-heading"><h2><span class="small-symbol">⌕</span> Engine insights</h2><span id="engine-state" class="pill">NOT RUN</span></div><div id="analysis-results" class="analysis-results"><p class="muted">Let the position speak. Request a bounded analysis to see real evaluations and candidate lines.</p></div><div class="analysis-controls"><label>Think time<select id="analysis-time"><option value="500">0.5 seconds</option><option value="1500" selected>1.5 seconds</option><option value="3000">3 seconds</option><option value="5000">5 seconds</option></select></label><button class="primary-button small" id="analyze-position">Analyze position <span>↗</span></button><button class="text-button" id="cancel-analysis" hidden>Cancel</button></div><div class="panel-links"><button id="coach-position" class="text-button">Explain this position</button><button id="branch-position" class="text-button">Create variation</button></div><div id="coach-output" class="coach-output" hidden></div></div>
+          </div>
+        </section>
+        <section id="content-view" class="content-view" hidden></section>
+        <section id="play-footer" class="studio-footer"><div><span>01</span><h3>Play a little. Learn a lot.</h3><p>From your first opening to your next great combination.</p></div><button data-view="learn" class="text-button">Explore the learning studio <span>→</span></button></section>
+        <footer class="page-footer"><span>CHESS ELO 5000 <b>0.1.0-development</b></span><span>A research ambition. Never an unverified rating.</span></footer>
+      </main>
+    </div>
+  </div>
+  <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+  <dialog id="login-dialog"><form id="login-form"><div class="eyebrow">YOUR LOCAL CHESS STUDIO</div><h2>Welcome to the laboratory.</h2><p class="muted" id="login-description">Sign in with your installation's owner password to save games and run analysis.</p><label id="password-label">Owner password<input id="owner-password" type="password" autocomplete="current-password" required></label><p id="login-error" class="error-text"></p><button type="submit" class="primary-button full">Open my studio <span>→</span></button><button type="button" class="text-button full" id="close-login">Explore first</button><a id="joomla-login-link" class="primary-button full" hidden>Sign in to the chess website</a></form></dialog>
+  <dialog id="new-game-dialog"><form id="new-game-form"><div class="dialog-top"><span class="eyebrow">A FRESH PERSPECTIVE</span><button type="button" class="icon-button" data-close="new-game-dialog" aria-label="Close">×</button></div><h2>Make your next move.</h2><label>Play mode<select id="new-mode"><option value="engine">Against local engine</option><option value="human">Two players, one board</option><option value="study">Study & variations</option></select></label><div class="form-grid"><label>Your side<select id="new-color"><option value="white">White · move first</option><option value="black">Black · engine first</option></select></label><label>Time control<select id="new-time"><option value="300">5 minutes</option><option value="600" selected>10 minutes</option><option value="180">3 minutes</option><option value="0">Untimed</option></select></label></div><div class="form-grid"><label>Increment<input id="new-increment" type="number" min="0" max="60" value="2"></label><label>Engine thinking<select id="engine-time"><option value="300">0.3 seconds</option><option value="700" selected>0.7 seconds</option><option value="1500">1.5 seconds</option><option value="3000">3 seconds</option></select></label></div><details><summary>Start from a FEN position</summary><label>FEN<textarea id="new-fen" rows="3" placeholder="Leave empty for the standard starting position"></textarea></label></details><p class="muted fine">The server validates every move. Engine searches begin only when you start a game or request them.</p><button class="primary-button full" type="submit">Start playing <span>→</span></button></form></dialog>
+  <dialog id="promotion-dialog"><h2>Choose your promotion.</h2><p class="muted">Your pawn has earned a new role.</p><div class="promotion-options" id="promotion-options"></div></dialog>
+  <dialog id="text-dialog"><form id="text-form"><div class="dialog-top"><span class="eyebrow" id="text-dialog-eyebrow">CHESS STUDY</span><button type="button" class="icon-button" data-close="text-dialog" aria-label="Close">×</button></div><h2 id="text-dialog-title">Import a game</h2><label id="text-dialog-label">PGN<textarea id="text-dialog-value" rows="10" spellcheck="false"></textarea></label><p id="text-dialog-help" class="muted fine"></p><button id="text-dialog-submit" type="submit" class="primary-button full">Import PGN</button></form></dialog>
+  <script src="./app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+[Event "CHESS-ELO-5000 PGN verification"]
+[Site "Local Windows GUI"]
+[Date "2026.11.07"]
+[Round "1"]
+[White "Sample White"]
+[Black "Sample Black"]
+[Result "1-0"]
+[Orientation "white"]
+
+1. e4 e5 2. Qh5 Nc6 3. Bc4 Nf6 {[%eval #1] } 4. Qxf7# 1-0

@@ -1,0 +1,28 @@
+{
+  "stage": "SOURCE_AND_PRIMARY_RUNTIME_ACCEPTANCE",
+  "python_test_suites": {
+    "seconds": 22.433,
+    "failures": 0,
+    "tests": 101,
+    "skipped": 0,
+    "errors": 0
+  },
+  "capabilities": {
+    "rules": "VERIFIED",
+    "human_engine_gameplay": "VERIFIED",
+    "archive_pgn_fen": "VERIFIED",
+    "restart_recovery": "VERIFIED",
+    "joomla_frontend_admin_bridge": "VERIFIED",
+    "learning_exercises": "VERIFIED_INITIAL_CATALOG",
+    "deterministic_coach": "VERIFIED",
+    "relevance_allocation": "EXPERIMENTAL",
+    "tablebases": "UNCONFIGURED",
+    "optional_llm": "UNCONFIGURED",
+    "elo_5000": "BRAND_IDENTITY_ONLY"
+  },
+  "browser_receipts": [
+    "evidence/browser/20261107T022234Z-before-restart/verification.json",
+    "evidence/browser/20261107T022437Z-after-restart/verification.json"
+  ],
+  "publication_gate": "A separate final source-bound package and download receipt is required."
+}

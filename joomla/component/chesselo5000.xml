@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+  <name>com_chesselo5000</name><author>CHESS ELO 5000 contributors</author><creationDate>2026-11</creationDate><version>0.1.0-development</version>
+  <description>Independent legal chess, analysis, education and experimental research.</description>
+  <namespace path="src">Chesselo5000\Component\Chesselo5000</namespace>
+  <files folder="site"><folder>src</folder><folder>tmpl</folder></files>
+  <media folder="media" destination="com_chesselo5000"><filename>index.html</filename><filename>app.js</filename><filename>style.css</filename></media>
+  <administration><menu img="class:chess">CHESS ELO 5000</menu><files folder="admin"><folder>services</folder><folder>src</folder><folder>tmpl</folder><filename>access.xml</filename><filename>config.xml</filename></files></administration>
+</extension>

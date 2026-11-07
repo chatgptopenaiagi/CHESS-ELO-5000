@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config><fieldset name="connection" label="Chess backend connection"><field name="private_config" type="text" label="Protected chess configuration file" description="Absolute JSON path outside the document root. If blank, CHESS_PRODUCT_CONFIG from the dedicated Apache configuration is used." filter="string"/></fieldset><fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL"><field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_chesselo5000" section="component"/></fieldset></config>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site" method="upgrade"><name>chesslab</name><version>0.1.0-development</version><creationDate>2026-11</creationDate><author>CHESS ELO 5000 contributors</author><description>Independent chess laboratory shell. Gameplay and research are supplied by com_chesselo5000.</description><files><filename>index.php</filename><filename>templateDetails.xml</filename><folder>css</folder></files><positions><position>top</position></positions></extension>
